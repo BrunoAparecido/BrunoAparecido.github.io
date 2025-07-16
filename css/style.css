@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #14213d;
+}
+
+/* HEADER */
+header {
+  background-color: #14213d;
+  color: white;
+  padding: 20px 0;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fca311;
+  font-size: 101%;
+}
+
+/* SESSÕES */
+section {
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+#inicio {
+  background: linear-gradient(-45deg, #14213d, #264d73, #2e2e2e, #444);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  color: white;
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#sobre {
+  background-color: #264d73;
+  color: #ffffff;
+  padding: 80px 20px;
+}
+
+#sobre p {
+  text-align: justify;
+}
+
+#sobre span {
+  color: #fca311;
+  font-weight: bold;
+}
+
+#sobre h2 {
+  margin-bottom: 20px;
+  color: #fca311;
+}
+
+.sobre-conteudo {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* FRASE DE IMPACTO */
+.titulo-impacto {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* PERFIL */
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.perfil img {
+  border-radius: 50%;
+  border: 6px solid #fca311;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.perfil img:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.perfil-texto h2 {
+  color: #fca311;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.perfil-texto p {
+  font-size: 16px;
+  max-width: 400px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* BOTÃO CTA */
+.btn-destaque {
+  padding: 12px 24px;
+  background-color: #fca311;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-destaque:hover {
+  background-color: #d38a01;
+}
+
+/* PROJETOS E CONTATO */
+#projetos {
+  background-color: #cfe3fa;
+  color: #14213d;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 280px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-legenda {
+  padding: 16px;
+  color: #14213d;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.card:hover .card-legenda {
+  background-color: #fca311;
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-conteudo {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-conteudo h3 {
+  margin-bottom: 16px;
+  color: #14213d;
+}
+
+.modal-conteudo p {
+  margin: 30px 20px;
+  color: #444;
+}
+
+.modal-img {
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.fechar {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #888;
+}
+
+.fechar:hover {
+  color: #000;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#contato {
+  background-color: #14213d;
+  color: white;
+}
+
+#contato h2 {
+  color: #fca311;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.form-contato textarea {
+  height: 120px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .perfil {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .perfil-texto p {
+    margin: 0 auto;
+  }
+}
