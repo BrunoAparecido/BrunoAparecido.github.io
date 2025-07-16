@@ -11,7 +11,6 @@ body {
   color: #14213d;
 }
 
-/* HEADER */
 header {
   background-color: #14213d;
   color: white;
@@ -36,7 +35,6 @@ nav a:hover {
   font-size: 101%;
 }
 
-/* SESSÕES */
 section {
   min-height: 100vh;
   padding-top: 100px;
@@ -98,7 +96,6 @@ section {
   100% { background-position: 0% 50%; }
 }
 
-/* FRASE DE IMPACTO */
 .titulo-impacto {
   font-size: 32px;
   font-weight: bold;
@@ -106,7 +103,6 @@ section {
   animation: fadeInUp 1s ease-out;
 }
 
-/* PERFIL */
 .perfil {
   display: flex;
   align-items: center;
@@ -141,7 +137,6 @@ section {
   color: white;
 }
 
-/* BOTÃO CTA */
 .btn-destaque {
   padding: 12px 24px;
   background-color: #fca311;
@@ -156,7 +151,6 @@ section {
   background-color: #d38a01;
 }
 
-/* PROJETOS E CONTATO */
 #projetos {
   background-color: #cfe3fa;
   color: #14213d;
@@ -261,7 +255,6 @@ section {
   color: #000;
 }
 
-/* ANIMAÇÃO */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -336,7 +329,6 @@ section {
   margin: 5px 0;
 }
 
-/* ANIMAÇÕES */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -348,7 +340,6 @@ section {
   }
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
   
   header nav {
