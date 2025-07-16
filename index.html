@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio - Bruno</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
@@ -38,7 +39,7 @@
     <h2>Sobre mim</h2>
     <div class="sobre-conteudo">
         <p>
-        Atualmente sou estudante de <span>Análise e Desenvolvimento de Sistemas</span>, com interesse em desenvolvimento web Full-stack. Antes da graduação, concluí o curso técnico em Desenvolvimento de Sistemas, onde tive meus primeiros contatos com tecnologias como <span>Java, JavaScript, HTML/CSS e PHP.</span>
+        Atualmente sou estudante de <span>Análise e Desenvolvimento de Sistemas</span>, com interesse em desenvolvimento web Full-stack. Antes da graduação, concluí o curso técnico em Desenvolvimento de Sistemas, onde tive meus primeiros contatos com tecnologias como <span>Java, JavaScript, HTML/CSS, PHP e MySQL.</span>
         Ao longo da formação superior, venho aprofundando meus conhecimentos em linguagens como C e Java, além de frameworks como Spring Boot, banco de dados PostgreSQL e metodologias ágeis.
         </p>
         <p>
@@ -60,39 +61,39 @@
 
     <!-- CARD 2 -->
     <div class="card" onclick="abrirModal('modal2')">
-      <img src="img/github.png" alt="Portfólio Interativo" />
+      <img src="img/img_portfolio.png" alt="Portfólio Interativo" />
       <div class="card-legenda">Portfólio Interativo <br>Bruno Aparecido</div>
     </div>
-  <a href="https://github.com/BrunoAparecido" class="card" target="_blank">
-    <img src="img/github.png" alt="Demais Projetos" />
-    <div class="card-legenda">Para conferir mais projetos, acesse meu GitHub!</div>
-  </a>
-  </div>
-</section>
+    <a href="https://github.com/BrunoAparecido" class="card" target="_blank">
+      <img src="img/github.png" alt="Demais Projetos" />
+      <div class="card-legenda">Para conferir mais projetos, acesse meu GitHub!</div>
+    </a>
+    </div>
+  </section>
 
-<!-- MODAL 1 -->
-<div class="modal" id="modal1">
-  <div class="modal-conteudo">
-    <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
-    <h3>Sistema de Agendamento Veterinário</h3>
+  <!-- MODAL 1 -->
+  <div class="modal" id="modal1">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
+      <h3>Sistema de Agendamento Veterinário</h3>
 
-     <img src="img/img_techvet.jpg" alt="Imagem do projeto" class="modal-img" />
-    <p><strong>Tecnologias:</strong> Java, Spring Boot, PostgreSQL, HTML/CSS, JavaScript</p>
-    <p>Projeto full-stack para agendamento de consultas em uma clínica veterinária, com cadastro, filtros e envio de e-mails.</p>
-    <a href="https://techvet.onrender.com" target="_blank" class="btn-destaque">Acessar projeto</a>
+      <img src="img/img_techvet.jpg" alt="Imagem do projeto" class="modal-img" />
+      <p><strong>Tecnologias:</strong> Java, Spring Boot, PostgreSQL, HTML/CSS, JavaScript</p>
+      <p>Projeto full-stack para agendamento de consultas em uma clínica veterinária, com cadastro, filtros e envio de e-mails.</p>
+      <a href="https://techvet.onrender.com" target="_blank" class="btn-destaque">Acessar projeto</a>
+    </div>
   </div>
-</div>
 
-<!-- MODAL 2 -->
-<div class="modal" id="modal2">
-  <div class="modal-conteudo">
-    <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
-    <h3>Portfólio Interativo</h3>
-    <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
-    <p>Site pessoal com foco em responsividade, design limpo e apresentação de projetos.</p>
-    <a href="https://github.com/seuusuario/projeto2" target="_blank" class="btn-destaque">Acessar projeto</a>
+  <!-- MODAL 2 -->
+  <div class="modal" id="modal2">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
+      <h3>Portfólio Interativo</h3>
+      <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+      <p>Site pessoal com foco em responsividade, design limpo e apresentação de projetos.</p>
+      <a href="https://github.com/seuusuario/projeto2" target="_blank" class="btn-destaque">Acessar projeto</a>
+    </div>
   </div>
-</div>
 
   <section id="contato">
     <h2>Contato</h2>
@@ -108,6 +109,17 @@
     <a href="https://wa.me/5512935005831?text=Olá%20Bruno,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar!" target="_blank" class="btn-whatsapp">Falar no WhatsApp</a>
   </section>
 
+  <footer class="footer">
+    <div class="footer-conteudo">
+      <p>&copy; 2025 Bruno Aparecido Soares Santa Ana</p>
+      <p>
+        <a href="https://www.linkedin.com/in/bruno-aparecido-soares-santa-ana-ab3457270" target="_blank">LinkedIn</a> |
+        <a href="mailto:bruno.santaana05@gmail.com">bruno.santaana05@gmail.com</a> |
+        <a href="https://github.com/BrunoAparecido" target="_blank">GitHub</a>
+      </p>
+      <p>Portfólio criado como parte da minha formação técnica e acadêmica em desenvolvimento de sistemas.</p>
+    </div>
+  </footer>
   <script src="script/index.js"></script>
 </body>
 </html>
